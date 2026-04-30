@@ -1,0 +1,13 @@
+# Local scratch
+.tmp/
+.cache/
+
+# Shell artifacts
+*.log
+
+# Editor
+.vscode/
+
+# OS
+Thumbs.db
+Desktop.ini

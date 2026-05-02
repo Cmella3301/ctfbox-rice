@@ -1,0 +1,143 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #f4f6fb;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    background-color: rgba(18, 18, 24, 0.74);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 0 10px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+#custom-launcher,
+#window,
+#custom-wallpaper,
+#network,
+#pulseaudio,
+#clock,
+#custom-power {
+    padding: 0 10px;
+}
+
+#custom-launcher {
+    color: #cedbff;
+    font-size: 18px;
+    padding-left: 12px;
+    padding-right: 14px;
+}
+
+#window {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 20px;
+}
+
+#clock {
+    color: #ffffff;
+}
+
+#network,
+#pulseaudio,
+#custom-wallpaper {
+    color: #d6dbeb;
+}
+
+#custom-power {
+    color: #ffb38a;
+    font-size: 17px;
+    padding-left: 14px;
+}
+
+#workspaces {
+    margin: 0;
+    padding: 0 2px;
+}
+
+#workspaces button {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: rgba(255, 255, 255, 0.35);
+    padding: 0 3px;
+    font-size: 13px;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+#workspaces button.active {
+    color: #cabdff;
+}
+
+#workspaces button.urgent {
+    color: #ff9b85;
+}
+
+window#waybar.bottom {
+    background: transparent;
+}
+
+window#waybar.bottom .modules-left,
+window#waybar.bottom .modules-center,
+window#waybar.bottom .modules-right {
+    background-color: rgba(18, 18, 24, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 6px 12px;
+}
+
+window#waybar.bottom #custom-launcher-dock,
+window#waybar.bottom #custom-firefox,
+window#waybar.bottom #custom-files,
+window#waybar.bottom #custom-terminal,
+window#waybar.bottom #custom-wallpaper-dock {
+    padding: 0 14px;
+    font-size: 22px;
+}
+
+window#waybar.bottom #custom-launcher-dock {
+    color: #e8ebf6;
+}
+
+window#waybar.bottom #custom-firefox {
+    color: #8ab3ff;
+}
+
+window#waybar.bottom #custom-files {
+    color: #a9d7ff;
+}
+
+window#waybar.bottom #custom-terminal {
+    color: #d0c2ff;
+}
+
+window#waybar.bottom #custom-wallpaper-dock {
+    color: #a3d1a7;
+}
+
+tooltip {
+    background-color: rgba(16, 17, 24, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+}
+
+tooltip label {
+    color: #edf1fb;
+    padding: 4px 8px;
+}

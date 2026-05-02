@@ -1,0 +1,110 @@
+[
+  {
+    "layer": "top",
+    "position": "top",
+    "height": 38,
+    "spacing": 8,
+    "margin-top": 10,
+    "margin-left": 14,
+    "margin-right": 14,
+    "modules-left": ["custom/launcher", "hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["custom/wallpaper", "network", "pulseaudio", "clock", "custom/power"],
+    "custom/launcher": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "rofi -no-config -show drun -display-drun 'Type here to search for apps' -theme ~/.config/rofi/launcher.rasi"
+    },
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "active-only": false,
+      "all-outputs": false,
+      "disable-scroll": true,
+      "sort-by-number": true,
+      "persistent-workspaces": {
+        "*": 5
+      },
+      "format-icons": {
+        "default": "",
+        "active": "",
+        "urgent": ""
+      }
+    },
+    "hyprland/window": {
+      "format": "{}",
+      "tooltip": false,
+      "separate-outputs": true,
+      "max-length": 28
+    },
+    "custom/wallpaper": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "sh -lc '$HOME/ctfbox-rice/scripts/choose-wallpaper.sh'"
+    },
+    "network": {
+      "format-wifi": "󰖩",
+      "format-ethernet": "󰈀",
+      "format-disconnected": "󰖪",
+      "tooltip-format": "{ipaddr}"
+    },
+    "pulseaudio": {
+      "format": "{icon}",
+      "format-muted": "󰝟",
+      "format-icons": {
+        "default": ["", "", ""]
+      },
+      "on-click": "pavucontrol -t 3"
+    },
+    "clock": {
+      "format": "{:%a  %H:%M}",
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "custom/power": {
+      "format": "⏻",
+      "tooltip": false,
+      "on-click": "hyprctl dispatch exit"
+    }
+  },
+  {
+    "layer": "top",
+    "position": "bottom",
+    "exclusive": false,
+    "passthrough": false,
+    "height": 54,
+    "margin-bottom": 18,
+    "modules-left": [],
+    "modules-center": [
+      "custom/launcher-dock",
+      "custom/firefox",
+      "custom/files",
+      "custom/terminal",
+      "custom/wallpaper-dock"
+    ],
+    "modules-right": [],
+    "custom/launcher-dock": {
+      "format": "󰮫",
+      "tooltip": false,
+      "on-click": "rofi -no-config -show drun -display-drun 'Type here to search for apps' -theme ~/.config/rofi/launcher.rasi"
+    },
+    "custom/firefox": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "firefox"
+    },
+    "custom/files": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "thunar"
+    },
+    "custom/terminal": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "kitty"
+    },
+    "custom/wallpaper-dock": {
+      "format": "󰸉",
+      "tooltip": false,
+      "on-click": "sh -lc '$HOME/ctfbox-rice/scripts/choose-wallpaper.sh'"
+    }
+  }
+]

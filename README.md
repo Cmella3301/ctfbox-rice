@@ -32,3 +32,28 @@ Recreate the Reddit-inspired Hyprland look with:
 ## Status
 
 Repo scaffold created on April 30, 2026.
+
+Theme baseline installed on May 2, 2026:
+
+- top floating Waybar control bar
+- bottom dock-style Waybar app strip
+- dedicated Rofi launcher theme
+- wallpaper chooser theme refresh
+- installer-backed dotfile deployment
+
+## Quick Install
+
+From inside the VM:
+
+```bash
+git clone https://github.com/Cmella3301/ctfbox-rice.git ~/ctfbox-rice
+cd ~/ctfbox-rice
+bash scripts/install.sh
+```
+
+## Wallpaper Chooser
+
+- `Super + W` opens the wallpaper chooser.
+- Wallpapers are loaded from `assets/wallpapers/`.
+- The current selection is stored in `~/.config/ctfbox/current-wallpaper`.
+- `scripts/seed-wallpapers.sh` can populate the wallpaper folder from a local `lavarch-review` clone.

@@ -23,6 +23,7 @@
 - swapped the dock browser launcher from Edge to Firefox for the Nova setup
 - replaced the static center bar label with a focused-window title module
 - tightened the wallpaper chooser so it behaves like a cleaner image gallery instead of a filename list
+- added a wallpaper-aware Kitty intro for the red-moon Naruto wallpaper with a custom emblem and quote
 
 ### Notes
 

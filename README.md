@@ -41,6 +41,7 @@ Theme baseline installed on May 2, 2026:
 - Firefox dock launcher
 - dedicated Rofi launcher theme
 - wallpaper chooser theme refresh
+- conditional Kitty intro for the red-moon wallpaper
 - installer-backed dotfile deployment
 
 ## Quick Install

@@ -15,6 +15,7 @@ packages=(
   brightnessctl
   playerctl
   pavucontrol
+  firefox
   ttf-jetbrains-mono-nerd
   noto-fonts-emoji
   imagemagick

@@ -1,0 +1,25 @@
+# Copy this file to `nova-install.conf` and edit it before running the installer.
+# The installer is destructive. It will repartition the target disk.
+
+CONFIRM_DESTROY="NO"
+
+# Leave blank to auto-select the only internal non-USB disk.
+# If more than one internal disk is present, the installer will stop and ask you
+# to set this explicitly, for example: TARGET_DISK="/dev/nvme0n1"
+TARGET_DISK=""
+
+HOSTNAME="nova-arch"
+USERNAME="mella"
+PASSWORD="ChangeMe123!"
+TIMEZONE="America/Toronto"
+LOCALE="en_US.UTF-8"
+KEYMAP="us"
+
+# Use the repo payload copied onto the USB when available.
+USE_LOCAL_PAYLOAD="YES"
+REPO_URL="https://github.com/Cmella3301/ctfbox-rice.git"
+
+AUTO_REBOOT="YES"
+
+# Set to YES only for VMs or systems that need software rendering.
+FORCE_SOFTWARE_RENDERING="NO"

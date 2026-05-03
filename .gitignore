@@ -1,6 +1,9 @@
 # Local scratch
 .tmp/
 .cache/
+dist/
+nova-usb-build/
+*.zip
 
 # Shell artifacts
 *.log

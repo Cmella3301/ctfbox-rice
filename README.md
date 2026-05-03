@@ -37,6 +37,8 @@ Theme baseline installed on May 2, 2026:
 
 - top floating Waybar control bar
 - bottom dock-style Waybar app strip
+- dynamic focused-window title in the center bar
+- Firefox dock launcher
 - dedicated Rofi launcher theme
 - wallpaper chooser theme refresh
 - installer-backed dotfile deployment
@@ -57,3 +59,13 @@ bash scripts/install.sh
 - Wallpapers are loaded from `assets/wallpapers/`.
 - The current selection is stored in `~/.config/ctfbox/current-wallpaper`.
 - `scripts/seed-wallpapers.sh` can populate the wallpaper folder from a local `lavarch-review` clone.
+
+## USB Install
+
+This repo can also generate a payload for an Arch boot USB so you can install the Nova setup onto a laptop or desktop with one installer script after boot.
+
+- Windows packager: `scripts/build-usb-payload.ps1`
+- Live installer: `usb/nova-usb-install.sh`
+- Docs: `docs/usb-installer.md`
+- Default payload output: sibling folder `../ctfbox-rice-dist/nova-usb`
+- Optional archive: add `-CreateZip` to the Windows packager
